@@ -11,15 +11,16 @@ For multi-language plugin:
 -->
 ## Description
 
-Permet d'avoir un second ou plusieurs autre Jarvis en mode Esclave... (Exemple pour plusieurs usage du micro déporté par exemple ou avoir des commandes différente d'une pièce à une autre...)
-vous conserver toutes les commandes déjà existante sur me Jarvis Maitre = server...
+Permet d'avoir un second ou plusieurs autres "Jarvis en mode Esclaves"... (Exemple, pour plusieurs micro déportés par exemple ou avoir des commandes différentes d'une pièce à une autre de votre domicile...)
+vous conservez toutes les commandes déjà existantes sur le Jarvis Maitre = "server"...
 
-ATTENTION: il faut avoir Jarvis API d'installé et mettre le plugin "Jarvis-esclave" en dernier plugin !!! 
+ATTENTION: il faut avoir Jarvis API d'installé sur "le Server" et mettre le plugin "Jarvis-esclave" en dernier classement de plugin !!! 
+
 
 ## Usage
 
 ```
 
 ## Author
-[Jean-Bernard Hallez](https://github.com/Jean-Bernard-Hallez/jarvis-plugin-esclave.git)
+[Jean-Bernard Hallez](http://domotiquefacile.fr/jarvis/plugins/multi-jarvis-server-esclaves)
 
