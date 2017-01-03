@@ -9,7 +9,7 @@ echo "$retroureponse"
 serverjarvislu=".[1].$usernameserver"
 retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix" | jq -r $serverjarvislu`
 	if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
-	return
+	echo ""
 	else
 	echo "$retroureponse"
 	fi
@@ -17,11 +17,19 @@ retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarv
 serverjarvislu=".[2].$usernameserver"
 retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix" | jq -r $serverjarvislu`
 	if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
+	echo ""
 	return
 	else
 	echo "$retroureponse"
 	fi
 
+#serverjarvislu=".[3].$usernameserver"
+#retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix" | jq -r $serverjarvislu`"
+#	if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
+#	return
+#	else
+#	echo "$retroureponse"
+#	fi
 
 fi
 }
