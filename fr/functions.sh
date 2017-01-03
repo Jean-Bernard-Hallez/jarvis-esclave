@@ -2,10 +2,27 @@ jv_pg_ct_serverjarvis () {
 serverjarvis=`echo $order | sed "s/ /%20/g"`
 serverjarvislu=".[0].$usernameserver"
 retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix" | jq -r $serverjarvislu`
-if [ "$retroureponse" = "" ]; then
+if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
 echo "Pas de retour de réponse du serveur Jarvis... Désolé"
 else
 echo "$retroureponse"
+serverjarvislu=".[1].$usernameserver"
+retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix" | jq -r $serverjarvislu`
+	if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
+	return
+	else
+	echo "$retroureponse"
+	fi
+
+serverjarvislu=".[2].$usernameserver"
+retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix" | jq -r $serverjarvislu`
+	if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
+	return
+	else
+	echo "$retroureponse"
+	fi
+
+
 fi
 }
 
