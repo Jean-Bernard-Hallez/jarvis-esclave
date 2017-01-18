@@ -1,5 +1,4 @@
-*ok*==say "ça fonctionne"
+*OK*==say "ça fonctionne"
 *COMMAND*==say "$(jv_pg_ct_commandserverjarvis)"
 *TEST*==say "$(jv_pg_ct_testpingserverjarvis)"
-
 (*)==say "$(jv_pg_ct_serverjarvis)"
