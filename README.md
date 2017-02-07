@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis !!!!)
 (17/01/17 correction d'un petit bug)
 (03/01/17 correction affiche plusieurs SAY provenant de Jarvis UI et traite les conversations)
 Permet d'avoir un second ou plusieurs autres "Jarvis en mode Esclaves"... (Exemple, pour plusieurs micro déportés par exemple ou avoir des commandes différentes d'une pièce à une autre de votre domicile...)
