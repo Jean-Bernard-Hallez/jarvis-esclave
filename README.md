@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis ligne par ligne vers say au lieu d'un bloc à la fois !!!!)
 (07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis !!!!)
 (17/01/17 correction d'un petit bug)
 (03/01/17 correction affiche plusieurs SAY provenant de Jarvis UI et traite les conversations)
