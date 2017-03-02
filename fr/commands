@@ -1,4 +1,5 @@
-*OK*==say "ça fonctionne"
-*COMMAND*==say "$(jv_pg_ct_commandserverjarvis)"
-*TEST*==say "$(jv_pg_ct_testpingserverjarvis)"
-(*)==say "$(jv_pg_ct_serverjarvis)"
+*COMMAND*SERVER*==say "$(jv_pg_ct_commandserverjarvis)" # Affiche les commandes du serveur
+*TEST*SERVER*==say "$(jv_pg_ct_testpingserverjarvis)"
+(*)==jv_pg_ct_serverjarvis
+
+

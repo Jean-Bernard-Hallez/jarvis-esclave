@@ -1,32 +1,34 @@
 jv_pg_ct_serverjarvis () {
 serverjarvis=`echo $order | sed "s/ /%20/g"`
-echo "" > essai.txt
+echo "" > $jv_dir/plugins/jarvis-esclave/escalve.txt
+
 # retroureponse=`curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix/\n" | jq -r ".[].$usernameserver"`
-curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix/\n" | jq -r ".[].$usernameserver" > essai.txt
-retroureponse=`cat essai.txt`
+curl -s "http://$adressserver:$adressserverport?order=$serverjarvis&mute=$serverjarvisvoix/\n" | jq -r ".[].$usernameserver" > $jv_dir/plugins/jarvis-esclave/escalve.txt
+retroureponse=`cat $jv_dir/plugins/jarvis-esclave/escalve.txt`
 
 if [ "$retroureponse" = "" -o "$retroureponse" = "null" ]; then
 say "Pas de retour de réponse du serveur Jarvis... Désolé"
 else
 
 
-nbrligneblague=`echo "$retroureponse" | wc -l`
-retourrep=1
+nbrligneserver=`echo "$retroureponse" | wc -l`
+retourrepserver=1
 
-while test $retourrep -le $nbrligneblague
+while test $retourrepserver -le $nbrligneserver
     do 
-blagueadire=`sed -n "$retourrep p;" essai.txt`
-say "$blagueadire"
-retourrep="$((retourrep + 1))"
+serverdit=`sed -n "$retourrepserver p;" $jv_dir/plugins/jarvis-esclave/escalve.txt`
+say "$serverdit"
+retourrepserver="$((retourrepserver + 1))"
 done
 fi
-
 }
 
 
 
 jv_pg_ct_testpingserverjarvis () {
-ping -c1 $adressserver 1>/dev/null 2>/dev/null
+# ping -c1 $adressserver 1>/dev/null 2>/dev/null
+ping -c1 $adressserver 2>/dev/null
+
 
 if [ $? -eq 0 ]
 then
@@ -45,5 +47,6 @@ fi
 
 
 jv_pg_ct_commandserverjarvis () {
+say "Voici les commandes du Server Jarvis:"
 curl "http://$adressserver:$adressserverport?action=get_commands"
 }

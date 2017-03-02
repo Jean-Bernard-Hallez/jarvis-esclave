@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(02/03/17 correction de variable qui rentraient en conflit avec autre plugin)
 (07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis ligne par ligne vers say au lieu d'un bloc à la fois !!!!)
 (07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis !!!!)
 (17/01/17 correction d'un petit bug)
