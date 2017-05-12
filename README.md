@@ -10,6 +10,7 @@ For multi-language plugin:
 - optionally write the Description / Usage sections in several languages
 -->
 ## Description
+(12/05/17 Correction depuis mise à jour Jarvis...)
 (02/03/17 correction de variable qui rentraient en conflit avec autre plugin)
 (07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis ligne par ligne vers say au lieu d'un bloc à la fois !!!!)
 (07/02/17 Grande amélioration... affiche TOUT le retour de Jarvis !!!!)
@@ -18,7 +19,7 @@ For multi-language plugin:
 Permet d'avoir un second ou plusieurs autres "Jarvis en mode Esclaves"... (Exemple, pour plusieurs micro déportés par exemple ou avoir des commandes différentes d'une pièce à une autre de votre domicile...)
 vous conservez toutes les commandes déjà existantes sur le Jarvis Maitre = "server"...
 
-ATTENTION: il faut avoir Jarvis API d'installé sur "le Server" et mettre le plugin "Jarvis-esclave" en dernier classement de plugin !!! 
+ATTENTION: il faut avoir Jarvis API d'installé sur "le Server" et mettre le plugin "Jarvis-esclave" Tout en bas du " Order" (en dernier classement de plugin) !!! 
 
 
 ## Usage
